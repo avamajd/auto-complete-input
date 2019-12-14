@@ -1,0 +1,50 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  color: #444444;
+
+  .input {
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #0979af;
+    outline: none;
+    padding: 0 5px;
+    color: #333333;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .input-with-menu {
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #0979af;
+    border-bottom: none;
+    padding: 0 5px;
+    outline: none;
+    color: #444444;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .suggestion-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0979af;
+    border-radius: 0 0 4px 4px;
+    width: 210px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    .suggestion-items {
+      cursor: pointer;
+      user-select: none;
+      padding: 5px;
+      &:hover {
+        background-color: #eeeeee;
+      }
+    }
+  }
+}
